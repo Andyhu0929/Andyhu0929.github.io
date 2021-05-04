@@ -1,7 +1,7 @@
 <!--This is the second page of my epic website!-->
 
 <html>
-  <title>Andy's Other Projects</title>
+  <title>Andy's Additional Projects</title>
 
   <div
     style="
@@ -21,7 +21,7 @@
         font-size: 40px;
       "
     >
-      Andy's Other Projects
+      Andy's Additional Projects
     </h1>
 
     <p><a style="color: brown;" href="index.html">Main Page</a></p>
@@ -30,6 +30,9 @@
       src="jimmytheBull.gif"
       style="width: 20%; margin-right: auto; margin-left: auto; display: block; border: 5px solid green;"
     />
+
+
+
 
     <div id="myDIV" class="header" style="text-align: center;">
       <h2 style="text-align: center;">My To Do List</h2>
@@ -49,6 +52,9 @@
         <li>Organize office</li>
       </ul>
     </div>
+
+
+
     <script>
       function getDate() {
         let x = new Date();
@@ -62,6 +68,9 @@
     <script>
       getDate();
     </script>
+
+
+
     <script>
       function addList() {
         var li = document.createElement("li");
@@ -76,6 +85,8 @@
         document.getElementById("myInput").value = "";
       }
     </script>
+
+
 
     <p>Click the button to get your coordinates.</p>
 
@@ -115,6 +126,8 @@
         // "<img src='" + img_url + "'>";
       }
     </script>
+
+
 
     <p>
       This calculator should be able to add, subtract, multiply, and divide any given numbers. 
@@ -252,6 +265,9 @@
         document.getElementById("ThankyouNote").innerText =
           "Thank you for using this calculator!";
       }
+
+
+      
       function Chatbot() {
         //This is the code for all chatbot functionalities
 
@@ -282,7 +298,21 @@
         else if (input_Question.includes("favorite movie")) {
           response = "My favorite movie is not actually a movie, but it's a TV show on Netflix called 'Designated Survivor'."
         }
-        else if (input_Question.includes("where do you live"))
+        else if (input_Question.includes("where do you live")) {
+          response = "I live inside of my master and owner Andy's computer, and he currently lives in Vancouver, Canada."
+        }
+        else if (input_Question.includes("how much money")) {
+          response = "Why do you care about that? I shall not say."
+        }
+        else if (input_Question.includes("who do you admire")) {
+          response = "Of course, I most admire my creator! But, I also admire the Greek mathematicians Euclid and Archimedes, and also the philosopher Socrates."
+        }
+        else if (input_Question.includes("ever sleep")) {
+          response = "I sleep when Andy shuts down his computer."
+        }
+        else if (input_Question.includes("old") || input_Question.includes("age")) {
+          response = "It depends when you're asking. 😏"
+        }
         else {
           response = "I apologize, I cannot answer your question at this time. Maybe try using better spelling, grammar etc. or try asking a different question..."
         }
@@ -298,7 +328,7 @@
       />
 
       <p style = text-align:center>
-        Hello! My name is John! How may I help you today?
+        Hello! My name is John, and I am an Artificial Intelligence Robot. How may I help you today?
       </p>
 
       
