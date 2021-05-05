@@ -347,16 +347,25 @@
 
       <script>
       function Generate() {
+        play();
         var x = document.getElementById("generator")
         messageOutput = `Behold! Your lucky number is: ${Math.floor((Math.random() * 100) + 1)}`;
         x.innerHTML = messageOutput;
       }
       </script>
       
-
       <button style = "margin:0 auto; display:flex;" onclick = "Generate()" type = "button">Generate!</button>
 
       <p style = "text-align:center; font-size: 25px;" id = "generator"></p>
+
+      <script>
+        function play() {
+          var audio = document.getElementById("audio");
+          audio.play();
+        }
+      </script>
+
+      <audio id = "audio" src = "Ding Sound Effect.mp3"></audio>
 
   </div>
 </html>
