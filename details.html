@@ -266,7 +266,7 @@
           "Thank you for using this calculator!";
       }
 
-
+      
       
       function Chatbot() {
         //This is the code for all chatbot functionalities
@@ -337,7 +337,27 @@
       <button style = "margin:0 auto; display:flex;" onclick="Chatbot()" type="button">Enter</button>
 
       <p style = text-align:center id="chatbotAnswer"></p>
-    
+
+      <h2 style = "text-align:center;">MY LUCKY NUMBER GENERATOR</h2>
+      
+      <img
+      src="numberGenerator.png"
+      style="width: 10%; margin-right: auto; margin-left: auto; display: block; border: 5px solid black;"
+      />
+
+      <script>
+      function Generate() {
+        var x = document.getElementById("generator")
+        messageOutput = `Behold! Your lucky number is: ${Math.floor((Math.random() * 100) + 1)}`;
+        x.innerHTML = messageOutput;
+      }
+      </script>
+      
+
+      <button style = "margin:0 auto; display:flex;" onclick = "Generate()" type = "button">Generate!</button>
+
+      <p style = "text-align:center; font-size: 25px;" id = "generator"></p>
+
   </div>
 </html>
 
