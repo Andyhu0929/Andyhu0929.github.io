@@ -1,6 +1,15 @@
 <html>
     <title> Andy's Own Website </title>
 
+    <head>
+      <style>
+        .horizontal-center {
+         margin: 0;
+         transform: translateX(42%); 
+}
+      </style>
+      </head><br>
+
     <div style = "background-image: url('lightcolorsky.jpg');background-repeat: no-repeat;background-size: 100% 100%;">
 
     <h1 style = "text-align: center;"> Andy's Own Website </h1>
@@ -11,11 +20,21 @@
 
     <h1 style = "text-align: center;"> I am 12 years old!!</h1>
 
+    <div class="horizontal-center">
+      <button onclick = "scrollWin()";>Click on this to see more amazing content!</button><br>
+    </div>
+
+    <script>
+      function scrollWin() {
+        window.scrollTo(0,2000)
+      }
+    </script>
+
     <img src = "The Golden Ratio.jpeg" alt = "The Golden Ratio" style = "width:35%;margin-right:auto;margin-left:auto;display:block;border: 5px solid red;">
 
     <p style = "text-align: center;"><a href = "https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a> is the best!</p>
 
-    <p style = "text-align: center;"> Here's a little more about me: I am in grade 7 this year, and I go to Shaughnessy Elementary School. I am also passionate about tennis, and I now play once a week at Richmond Country Club. </p>
+    <p style = "text-align: center;"> Here's a little more about me: I am in seventh grade this year, and I go to Shaughnessy Elementary School. I am also passionate about tennis, and I now play once a week at Richmond Country Club. </p>
 
     <img src = "tennisball.png" alt = "A Tennis Ball" style = "width:30%;margin-right:auto;margin-left:auto;display:block;border: 5px solid black;">
 
@@ -25,9 +44,11 @@
 
     <p style = "text-align: center;"> And here's a picture of a clarinet: </p>
 
-    <img src = "clarinet.jpg" alt = "A Clarinet" style = "width:30%;margin-right:auto;margin-left:auto;display:block;border: 5px solid black;">
+    <img src = "clarinet.jpg" alt = "A Clarinet" style = "width:30%;margin-right:auto;margin-left:auto;display:block;border: 5px solid black;"> <br> 
 
-    <h1 style = "text-align: center;"> In my spare time, I like to read a lot, and sometimes play video games as well!</h1>
+    <div style = "text-align: center;">
+      <h1 style = "border: 3px solid green; display: inline;"> In my spare time, I like to read a lot, and sometimes play video games as well!</h1>
+    </div>
 
     <p style = "text-align: center;">Also, I watch YouTube, and my favourite youtuber right now is probably MrBeast(WARNING: TOTALLY NOT AN ADVERTISEMENT). If you're interested, here is <a href = "https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA">MrBeast's YouTube link. </a></p>
 
@@ -35,7 +56,7 @@
     <p style = "text-align: center;">He also does a separate gaming channel on YouTube, here is <a href = "https://www.youtube.com/channel/UCIPPMRA040LQr5QPyJEbmXA"> the link. </a></p>
 
 
-    <p style = "text-align: center;"> MrBeast does a lot of crazy (but fun) stuff in his videos, anything you can imagine! Here is one of my favourite: </p>
+    <p style = "text-align: center;"> MrBeast does a lot of crazy (but fun!) stuff in his videos, anything you can imagine! Here is one of my favourite: </p>
 
     <div align = "center">
     <iframe width = "1050" height = "600" 
@@ -49,9 +70,9 @@
 
     <p style = "text-align:center;"> For helping me build this fascinating website and teaching me new things about the fascinating world of coding! </p>
 
-    <img src = "smiley.png" alt="Smiley Emoji" style="width:10%;margin-right:auto;margin-left:auto;display:block;">
+    <img src = "smiley.png" alt = "Smiley Emoji" style = "width: 10%; margin-right: auto; margin-left: auto; display: block;">
 
-    <p style = "text-align:center;"> Ok! Now that's said, I will think of new ideas to add on here. However, if any of you guys have any suggestions to add on my website (though I'm pretty sure nobody else can see this), feel free to e-mail me at andyhu.you@gmail.com</p>
+    <p style = "text-align: center;"> Ok! Now that's said, I will think of new ideas to add on here. However, if any of you guys have any suggestions to add on my website (though I'm pretty sure nobody else can see this), feel free to e-mail me at andyhu.you@gmail.com</p>
     
     <script>
         function play() {
@@ -75,7 +96,7 @@
 
     </div>
 
-    <p><a href="details.html">Daily Agenda</a></p>
+    <p><a href = "details.html">Daily Agenda</a></p>
     
 </html>
 

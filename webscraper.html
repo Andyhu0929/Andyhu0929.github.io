@@ -1,0 +1,41 @@
+<html>
+    <title>Andy's Epic Web-Scraper</title>
+    <h1 style="text-align:center;">Andy's Epic Web-Scraper</h1>
+
+    <script>
+        // 56 -> 60; 71-> 80; 90 -> 90
+        function roundToNearest10Upwards(input) {
+
+            // Option 1: Proper way to do this
+            let currentNum = input;
+            let i;
+
+            for (i = 0; ; i++) {
+                if (currentNum % 10 == 0) {// This sign % means if a number is divided in this case by 10, this returns the remainder
+                return currentNum // DONE
+                }
+                currentNum++; // add 1 to currentNum
+            }
+
+            //Option 2: "Hacky" way to do this
+            /* var splittedString = input.toString().split("");  // [ "2", "3" ,"2"]
+            let i;
+
+            for (i = 0; i < splittedString.length; i++) {
+                splittedString[i] = parseInt(splittedString[i])
+            }
+            console.log(splittedString) // [ 2, 3 ,2]
+            var howManyDigits = splittedString.length;
+            splittedString[howManyDigits - 1] = 0
+            splittedString[howManyDigits - 2] = splittedString[howManyDigits-2] + 1
+
+            const result = Number(splittedString.join(""));
+            return result; */
+        
+        }
+
+        console.log(roundToNearest10Upwards(73))
+    </script>
+
+</html>
+
